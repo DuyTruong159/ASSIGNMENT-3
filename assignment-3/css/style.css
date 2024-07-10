@@ -1,0 +1,126 @@
+/* Add font */
+@font-face {
+    font-family: DharmaGothicE;
+    src: url("../font/DharmaGothicE.otf");
+}
+
+html {
+    /* Add background color */
+    background-color: #000000;
+    font-family: 'DharmaGothicE', sans-serif;
+    line-height: 11px;
+}
+
+body, p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    /* Full height image */
+    height: 100vh;
+    width: 33vw;
+    margin: auto;
+
+    /* Add background image */
+    background: url("../img/poster.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    /* Align text */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    /* All text uppercase */
+    text-transform: uppercase;  
+
+    font-size: 11px;
+}
+
+/* Text in top poster */
+.top {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    margin-top: 15px;
+    color: #C38200;
+}
+
+.top > div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.top > div:nth-child(2) {
+    align-items: flex-end;
+}
+
+.top > div > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top > div:nth-child(1) > div:nth-child(2) {
+    width: 90%;
+    margin-left: 4px;
+}
+
+.top > div:nth-child(2) > div:nth-child(2) {
+    width: 70%;
+    margin-right: 4px;
+}
+
+.top > div > div > div {
+    text-align: center;
+}
+
+.top > div > div > div > p:nth-child(2){
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.top > div > div > div > p:nth-child(3){
+    font-size: 8px;
+}
+
+.top span {
+    font-size: 6px;
+}
+
+/* Text in bottom poster */
+.bottom {
+    width: 75%;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #CDA00F;
+}
+
+.bottom span {
+    font-size: 8px;
+}
+
+/* 2 text in 1 place */
+.bottom .credit {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1;
+    top: -5px;
+    position: relative;
+    color: #C38200;
+}
+
+.bottom .credit span {
+    font-size: 5px;
+}
